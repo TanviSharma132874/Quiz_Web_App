@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #001e4d;
+}
+.app {
+    background : #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;   
+}
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+.quiz {
+    padding: 20px 0;
+}
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+.btn:hover:not(:disabled) {
+    background: #222;
+    color: #fff;
+    transform: scale(1.02);
+}
+.btn:active {
+    transform: scale(0.98);
+}
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct {
+    background: #9aeabc !important;
+    border-color: #4caf50 !important;
+    color: #2e7d32 !important;
+    font-weight: 600;
+}
+.incorrect {
+    background: #ff9393 !important;
+    border-color: #f44336 !important;
+    color: #c62828 !important;
+    font-weight: 600;
+}
+.btn:disabled {
+    cursor: not-allowed;
+}
+.btn:disabled:hover {
+    background: inherit;
+    color: inherit;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #001e4d, #4a90e2);
+    width: 0%;
+    transition: width 0.5s ease;
+    border-radius: 5px;
+}
+
+/* Quiz Info Styles */
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Score Display Enhancement */
+.final-score {
+    text-align: center;
+    font-size: 24px;
+    color: #001e4d;
+    margin: 20px 0;
+}
+
+.score-excellent {
+    color: #4caf50;
+}
+
+.score-good {
+    color: #ff9800;
+}
+
+.score-poor {
+    color: #f44336;
+}
